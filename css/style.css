@@ -119,7 +119,7 @@ footer{
     font-size: 13px;
     line-height: 20px;
 }
-.row{
+.rows{
     width: 85%;
     margin: auto;
     display: flex;
@@ -127,49 +127,43 @@ footer{
     align-items: flex-start;
     justify-content: space-between;
 }
-.col{
+.cols{
     flex-basis: 25%;
     padding: 10px;
 }
-.col:nth-child(2), .col:nth-child(3){
+.cols:nth-child(2), .cols:nth-child(3){
     flex-basis: 15%;
 }
-.footer_logo{
-    width: 80px;
-    position: relative;
-    top: -23px;
-    left: -20px;
-}
-.footer_about{
+.footers_about{
     position: relative;
     top: -23px;
 }
-.col h3{
+.cols h3{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
 }
-.footer_email{
+.footers_email{
     width: fit-content;
     border-bottom: 1px solid rgb(0, 255, 213);
     margin: 20px 0;
 }
-.col ul li{
+.cols ul li{
     list-style: none;
     margin-bottom: 12px;
 }
-.col ul li a{
+.cols ul li a{
     margin: 0 1rem;
 	color: white;
 	text-decoration: none;
 	transition: 0.3s;
 }
 
-.col ul li a:hover{
+.cols ul li a:hover{
     color: rgb(0, 255, 213);
 }
 
-.col form{
+.cols form{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -178,7 +172,7 @@ footer{
     margin-bottom: 50px;
 }
 
-.col form:hover{
+.cols form:hover{
     padding-bottom: 20px;
     display: flex;
     align-items: center;
@@ -187,25 +181,25 @@ footer{
     margin-bottom: 60px;
 }
 
-.col form .icon{
+.cols form .icon{
     font-size: 18px;
     margin-right: 10px;
 }
-.col form input{
+.cols form input{
     width: 100%;
     background: transparent;
     color: #ccc;
     border: 0;
     outline: none;
 }
-.col form button{
+.cols form button{
     background-color: rgb(0, 255, 213);
     border-radius: 5px;
     outline: none;
     padding: 7px;
     cursor: pointer;
 }
-.col form button .icon_right{
+.cols form button .icon_right{
     font-size: 10px;
     color: #ccc;
 }
@@ -219,7 +213,7 @@ hr{
 footer .copyright{
     text-align: center;
 }
-.bottom_line{
+.bottoms_line{
     width: 100%;
     height: 5px;
     background: #767676;
@@ -229,7 +223,7 @@ footer .copyright{
     left: 0;
     overflow: hidden;
 }
-.bottom_line span{
+.bottoms_line span{
     width: 15px;
     height: 100%;
     background: rgb(0, 255, 213);
@@ -249,14 +243,14 @@ footer .copyright{
 }
 
 @media (min-width: 768px) {
-    .col {
+    .cols {
         flex-basis: 50%;
         max-width: 50%;
     }
 }
 
 @media (min-width: 992px) {
-    .col {
+    .cols {
         flex-basis: 25%;
         max-width: 25%;
     }

@@ -49,7 +49,7 @@
 		</div>
 	</header>
 
-    test test
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
 
 	<footer>
         <div class="rows">
@@ -108,5 +108,31 @@
 
 	<script src="js/script.js"></script>
     <script src="js/load.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script>
+        window.onload = function () {
+           const chart = new CanvasJS.Chart("chartContainer", {
+               animationEnabled: true,
+               theme: "light2",
+               title: {
+                  text: "Koncertet me te Shikuara"
+               },
+               axisY: {
+               title: "Numri i njerëzve",
+               includeZero: true
+            },
+            data: [{
+               type: "column",
+               yValueFormatString: "#,##0",
+               dataPoints: [
+                   { label: "Rock Concert", y: 50000 },
+                   { label: "Jazz Night", y: 25000 },
+                   { label: "Pop Festival", y: 15000 }
+                ]
+            }]
+        });
+        chart.render();
+       }
+    </script>
 </body>
 </html>
